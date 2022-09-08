@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeMainComponent } from './modules/general/home-main/home-main.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    HomeMainComponent,
     NotFoundComponent,
   ],
   imports: [

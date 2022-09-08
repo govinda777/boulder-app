@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomeMainComponent } from './modules/general/home-main/home-main.component';
 
 import { HomeComponent } from './modules/general/home/home.component';
 import { NotFoundComponent } from './modules/general/not-found/not-found.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, },
+
+  { path: '', component: HomeMainComponent, },
+
+  { path: 'ori', component: HomeComponent, },
 
   {
     path: 'httpclient',
