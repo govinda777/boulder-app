@@ -2,27 +2,27 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { ExerciceRoutingModule } from './exercice-routing.module';
-import { ExerciceComponent } from './exercice.component';
+import { RoutingModule } from './routing.module';
+import { BoulderCreatorComponent } from './component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { PrettyJsonPipe } from './pretty-json.pipe';
 
 @NgModule({
   declarations: [
-    ExerciceComponent,
+    BoulderCreatorComponent,
     PrettyJsonPipe
   ],
   providers: [
   ],
   imports: [
     CommonModule,
-    ExerciceRoutingModule,
+    RoutingModule,
     FormsModule,
     ReactiveFormsModule,
   ],
   exports: [
-    ExerciceComponent
+    BoulderCreatorComponent
   ],
 })
 export class ExerciceModule { }

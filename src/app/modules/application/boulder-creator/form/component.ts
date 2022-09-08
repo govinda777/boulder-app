@@ -4,10 +4,10 @@ import { FormArray } from '@angular/forms';
 
 @Component({
   selector: 'app-form-array',
-  templateUrl: './exercice.component.html',
-  styleUrls: ['./exercice.component.css'],
+  templateUrl: './component.html',
+  styleUrls: ['./component.css'],
 })
-export class ExerciceComponent implements OnInit {
+export class BoulderCreatorComponent implements OnInit {
 
   exampleForm = this.fb.group({
     name: [''],

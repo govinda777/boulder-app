@@ -2,12 +2,12 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { ExerciceComponent } from './exercice.component';
+import { BoulderCreatorComponent } from './component';
 import { PrettyJsonPipe } from './pretty-json.pipe';
 
-describe('ExampleFormsFormArrayComponent', () => {
-  let component: ExerciceComponent;
-  let fixture: ComponentFixture<ExerciceComponent>;
+describe('BoulderCreatorComponent', () => {
+  let component: BoulderCreatorComponent;
+  let fixture: ComponentFixture<BoulderCreatorComponent>;
 
   beforeEach(async () => {
     TestBed.configureTestingModule({
@@ -16,7 +16,7 @@ describe('ExampleFormsFormArrayComponent', () => {
         FormsModule,
       ],
       declarations: [
-        ExerciceComponent,
+        BoulderCreatorComponent,
         PrettyJsonPipe
       ]
     })
@@ -24,7 +24,7 @@ describe('ExampleFormsFormArrayComponent', () => {
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ExerciceComponent);
+    fixture = TestBed.createComponent(BoulderCreatorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

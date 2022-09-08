@@ -22,7 +22,7 @@ const routes: Routes = [
       { path: 'list', component: ListComponent },
       {
         path: 'form',
-        loadChildren: () => import('./form/exercice.module')
+        loadChildren: () => import('./form/module')
           .then(mod => mod.ExerciceModule)
       },
       {
