@@ -54,6 +54,12 @@ export class HomeMainComponent {
           link: 'dashboard'
         },
         {
+          name: 'boulder-creator',
+          description: 'Channel component with Input, Output and Event Emitter',
+          icon: 'far fa-clone',
+          link: 'boulder-creator'
+        },
+        {
           name: 'Services',
           description: 'Use services to view a playlist and a youtube player',
           icon: 'fas fa-handshake',

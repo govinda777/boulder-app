@@ -7,7 +7,7 @@ export class DashboardCard {
   
     constructor() {
 
-      this.img = './assets/params/images/logo/logo.png';
+      this.img = './assets/params/images/academia/1.jpeg';
       this.title = "Title - old - old" ;
       this.linkRef = '#';
       this.desc = '111111';

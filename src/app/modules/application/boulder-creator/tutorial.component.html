@@ -1,0 +1,28 @@
+<div class="container nga-container-layout">
+  <div class="nga-container-sidebar">
+    <ul class="list-unstyled p-2">
+      <li class="mb-1">
+        <button class="btn nga-btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+          data-bs-target="#home-collapse" aria-expanded="false">
+          Menu
+        </button>
+        <div class="collapse" id="home-collapse">
+          <ul class="nga-btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a routerLink="/boulder-creator/card" class="link-dark rounded"><i
+                  class="fas fa-user text-primary mt-1 me-2"></i>Listar vias</a>
+            </li>
+            <li><a routerLink="/boulder-creator/detail" class="link-dark rounded"><i
+                  class="fas fa-user-friends text-primary mt-1 me-2"></i>Cadastrar vias</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="col p-4">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>
