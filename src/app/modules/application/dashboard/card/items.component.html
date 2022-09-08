@@ -1,0 +1,45 @@
+<h1>CARD</h1>
+
+<div class="card" style="width: 18rem">
+                    
+  <img [style.opacity]="getOpacity(old)" src="{{model.img}}"/>
+
+  <div [style.opacity]="getOpacity(old)" class="card-header">
+
+    <div [class.visually-hidden]="!(old == 4)" class="shadow-none p-3 bg-light rounded">
+      <h2>Title - old - old - old - old</h2>
+    </div>
+    
+    <div [class.visually-hidden]="!(old == 3)" class="shadow-sm p-3 bg-body rounded">
+      <b>Title - old - old - old</b>
+    </div>
+    
+    <div [class.visually-hidden]="!(old == 2)" class="shadow p-3 bg-body rounded">
+      <b>{{model.title}}</b>
+    </div>
+
+    <div [class.visually-hidden]="!(old == 1)" class="shadow-lg p-3 bg-body rounded">
+      <b>Title - old</b>
+    </div>
+
+  </div>
+
+  <div [class.visually-hidden]="plus" class="card-body">
+    <p>{{model.desc}}</p>
+
+    
+  </div>
+
+  <div class="card-footer" style="opacity: 1!important">
+
+    <div [class.visually-hidden]="!showOldText">
+      <p [class.visually-hidden]="!(old >= 1)"           >old : [-{{old}}-] -- [-4-]</p>
+      <!--<p [class.visually-hidden]="!(old == 4)"           >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-------__-------]</p>-->
+      <p [class.visually-hidden]="!(old == 2 )">old : [-$-] -- [-$-]</p>
+      <p [class.visually-hidden]="!(old == 3 )">old : <span style='font-size:20px;'>😓</span></p>
+      <p [class.visually-hidden]="!(old == 4 )"><span style='font-size:50px;'>🤑</span></p>
+    </div>
+    <a (click)="toggle()" class="btn btn-primary">[+]</a>
+  </div>
+
+</div>
