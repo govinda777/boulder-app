@@ -68,14 +68,33 @@ in your browser go to [http://localhost:4200](http://localhost:4200)
 
 
 ### Author
-* Author  : danny
+* Author  : Govinda Systems
 
 ### Documentation
 
-English Tutorials
-- Installation - https://www.ganatan.com/tutorials/httpclient-with-angular
-- Tutorials Step-by-Step - https://www.ganatan.com/tutorials/en
+https://github.com/govinda777/boulder-app.git
 
-Tutoriels en français
-- Installation - https://www.ganatan.com/tutorials/httpclient-avec-angular
-- Tutoriels Etape par étape - https://www.ganatan.com/tutorials
+## Como funciona a comunicação com o Esp8266
+
+
+* Chamada de endpoint para o MQQT Service Brokern 
+
+
+### A matriz abaixo representa as agarras ligadas e desligadas Matriz
+
+$$
+
+
+climb = \left[\begin{matrix}
+  0 & 0 & 0 & 1 & 0 & 0 \\
+  0 & 0 & 0 & 0 & 0 & 0 \\
+  0 & 0 & 0 & 0 & 0 & 0 \\
+  0 & 1 & 0 & 0 & 0 & 0 \\
+  0 & 0 & 0 & 0 & 0 & 0 \\
+  0 & 0 & 0 & 0 & 0 & 0 \\
+  0 & 0 & 1 & 0 & 0 & 0 \\
+  0 & 0 & 0 & 0 & 0 & 0 \\
+  0 & 0 & 0 & 1 & 0 & 0 \\            
+ \end{matrix}\right]
+
+$$
